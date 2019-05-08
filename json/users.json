@@ -2071,71 +2071,40 @@
 			},
 			"groceries": {
 				"required": [{
-						"Ingredient": {
-							"Id": "99075",
-							"Name": "chocolate protein powder",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/chocolate-protein-powder.jpg",
-							"Amount": 200,
-							"UnitShort": "Tbsp",
-							"Aisle": "Health Foods"
-						}
+						"name": "chocolate protein powder",
+						"amount": 2,
+						"unit": "tablespoons"
 					}, {
-						"Ingredient": {
-							"Id": "19165",
-							"Name": "cocoa powder",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/cocoa-powder.png",
-							"Amount": 50,
-							"UnitShort": "Tbsp",
-							"Aisle": "Baking"
-						}
+						"name": "cocoa powder",
+						"amount": 0.5,
+						"unit": "tablespoon"
 					}, {
-						"Ingredient": {
-							"Id": "1124",
-							"Name": "egg whites",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/egg-white.jpg",
-							"Amount": 200,
-							"UnitShort": "units",
-							"Aisle": "Milk, Eggs, Other Dairy"
-						}
+						"name": "egg whites",
+						"amount": 2,
+						"unit": ""
 					}, {
-						"Ingredient": {
-							"Id": "18075",
-							"Name": "multi grain bread",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/multigrain-bread.png",
-							"Amount": 300,
-							"UnitShort": "slices",
-							"Aisle": "Bakery/Bread"
-						}
+						"name": "whole grain bread",
+						"amount": 3,
+						"unit": "slices"
 					}, {
-						"Ingredient": {
-							"Id": "12220",
-							"Name": "ground flaxseed",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/flax-seeds.png",
-							"Amount": 100,
-							"UnitShort": "Tbsp",
-							"Aisle": "Health Foods;Baking"
-						}
+						"name": "ground flaxseed",
+						"amount": 1,
+						"unit": "tablespoon"
 					}, {
-						"Ingredient": {
-							"Id": "19297",
-							"Name": "jam",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/strawberry-jam.png",
-							"Amount": 100,
-							"UnitShort": "Tbsp",
-							"Aisle": "Nut butters, Jams, and Honey"
-						}
+						"name": "jam",
+						"amount": 1,
+						"unit": "tablespoon"
 					}, {
-						"Ingredient": {
-							"Id": "16098",
-							"Name": "peanut butter",
-							"Image": "https://spoonacular.com/cdn/ingredients_100x100/peanut-butter.png",
-							"Amount": 100,
-							"UnitShort": "Tbsp",
-							"Aisle": "Nut butters, Jams, and Honey"
-						}
+						"name": "peanut butter",
+						"amount": 1,
+						"unit": "tablespoon"
+					}, {
+						"name": "water",
+						"amount": 1,
+						"unit": "tablespoon"
 					}
 				],
-				"Stock": [{
+				"stock": [{
 						"id": 16098,
 						"aisle": "Nut butters, Jams, and Honey",
 						"image": "peanut-butter.png",
@@ -2165,12 +2134,44 @@
 								"description": "Keep your kitchen pantry well-stocked with Creamy Peanut Butter from Jif to help you create your favorite meals throughout the day. With 7 grams of protein per serving, you'll feel great about indulging in this classic peanut spread. Whether you spread it onto toast, dip apples into it or create a delicious Thai peanut sauce, you'll get the nutty flavor you've always loved.",
 								"images": [
 									"https://images.barcodelookup.com/2278/22786045-1.jpg"
+								],
+								"stores": [{
+										"store_name": "Pharmapacks",
+										"store_price": "2.92",
+										"product_url": "https://www.pharmapacks.com/products.php?product=Jif-Creamy-Peanut-Butter-16-oz",
+										"currency_code": "USD",
+										"currency_symbol": "$"
+									}, {
+										"store_name": "Walgreens",
+										"store_price": "3.29",
+										"product_url": "http://www.walgreens.com/store/c/jif-peanut-butter-creamy/ID=prod6204011-product",
+										"currency_code": "USD",
+										"currency_symbol": "$"
+									}, {
+										"store_name": "Wal-Mart.com USA, LLC",
+										"store_price": "3.30",
+										"product_url": "http://www.walmart.com/ip/Jif-Creamy-Peanut-Butter-0-0-OZ/25847548",
+										"currency_code": "USD",
+										"currency_symbol": "$"
+									}, {
+										"store_name": "Target",
+										"store_price": "2.49",
+										"product_url": "http://goto.target.com/c/0/201333/2092?prodsku=13292010&u=https://www.target.com/p/jif-174-creamy-peanut-butter-16oz/-/A-13292010",
+										"currency_code": "USD",
+										"currency_symbol": "$"
+									}, {
+										"store_name": "Jet.com",
+										"store_price": "3.66",
+										"product_url": "https://jet.com/product/Jif-Peanut-Butter-Creamy-16-Oz/a301a662b6124ec3a199a7c60d490cc6",
+										"currency_code": "USD",
+										"currency_symbol": "$"
+									}
 								]
 							}
 						]
 					}
 				],
-				"Shopping": []
+				"shopping": []
 			},
 			"schedule": [{
 					"date": "2019-11-03T00:00:00.000Z",
