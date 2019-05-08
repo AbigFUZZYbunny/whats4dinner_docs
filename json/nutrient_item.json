@@ -3,4 +3,16 @@
 	"amount": 325.26,
 	"unit": "cal",
 	"percentOfDailyNeeds": 16.26
+	"preferences": [
+		"mealMin": 0,
+		"mealMax": 0,
+		"breakfastMin": 0,
+		"breakfastMax": 0,
+		"lunchMin": 0,
+		"lunchMax": 0,
+		"dinnerMin": 0,
+		"dinnerMax": 0,
+		"dailyMin": 0,
+		"dailyMax": 0
+	]
 }
