@@ -5,6 +5,7 @@
 import 'dart:convert';
 import 'nutrient_item.dart';
 import 'ingredient_item.dart';
+import 'package:flutter/material.dart';
 
 class Preferences {
   Notifications notifications;
@@ -31,6 +32,17 @@ class Preferences {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Preferences.newPreferences() => new Preferences(
+    notifications: Notifications.newNotificationsPref(),
+    schedule: Schedule.newSchedulePreferences(),
+    favorites: Favorites.newFavoritesPref(),
+    cuisines: Cuisines.newCuisinesPref(),
+    allergies: Allergies().ret,
+    diets: Diets.newDietsPref(),
+    nutrition: Nutrition.newNutritionPref(),
+    ingredients: Ingredients.newIngredientsPref(),
+  );
+
   factory Preferences.fromJson(Map<String, dynamic> json) => new Preferences(
     notifications: json["notifications"] == null ? null : Notifications.fromJson(json["notifications"]),
     schedule: json["schedule"] == null ? null : Schedule.fromJson(json["schedule"]),
@@ -54,6 +66,30 @@ class Preferences {
   };
 }
 
+class Allergies{
+  Map<String, bool> ret = new Map<String,bool>();
+
+  Allergies() {
+    List<String> _all= new List<String>();
+    _all.add("dairy");
+    _all.add("egg");
+    _all.add("gluten");
+    _all.add("grain");
+    _all.add("peanut");
+    _all.add("seafood");
+    _all.add("sesame");
+    _all.add("shellfish");
+    _all.add("soy");
+    _all.add("sulfite");
+    _all.add("treeNut");
+    _all.add("wheat");
+
+    for (String a in _all) {
+      ret.putIfAbsent(a, () => false);
+    }
+  }
+}
+
 class Cuisines {
   int cuisineWeight;
   List<String> cuisineTypes;
@@ -66,6 +102,11 @@ class Cuisines {
   factory Cuisines.fromRawJson(String str) => Cuisines.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
+
+  factory Cuisines.newCuisinesPref() => new Cuisines(
+    cuisineWeight: 0,
+    cuisineTypes: new List<String>(),
+  );
 
   factory Cuisines.fromJson(Map<String, dynamic> json) => new Cuisines(
     cuisineWeight: json["cuisineWeight"] == null ? null : json["cuisineWeight"],
@@ -105,6 +146,18 @@ class Diets {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Diets.newDietsPref() => new Diets(
+    filterLevel: 0,
+    glutenFree: false,
+    keto: false,
+    paleo: false,
+    pescatarian: false,
+    primal: false,
+    vegan: false,
+    vegetarian: false,
+    whole30: false,
+  );
+
   factory Diets.fromJson(Map<String, dynamic> json) => new Diets(
     filterLevel: json["filterLevel"] == null ? null : json["filterLevel"],
     glutenFree: json["glutenFree"] == null ? null : json["glutenFree"],
@@ -143,6 +196,11 @@ class Favorites {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Favorites.newFavoritesPref() => new Favorites(
+    scheduleWeight: 0,
+    quickWeight: 0,
+  );
+
   factory Favorites.fromJson(Map<String, dynamic> json) => new Favorites(
     scheduleWeight: json["scheduleWeight"] == null ? null : json["scheduleWeight"],
     quickWeight: json["quickWeight"] == null ? null : json["quickWeight"],
@@ -168,6 +226,12 @@ class Ingredients {
   factory Ingredients.fromRawJson(String str) => Ingredients.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
+
+  factory Ingredients.newIngredientsPref() => new Ingredients(
+    favoritesFilterLevel: 0,
+    favorites: new List<IngredientItem>(),
+    ignored: new List<IngredientItem>(),
+  );
 
   factory Ingredients.fromJson(Map<String, dynamic> json) => new Ingredients(
     favoritesFilterLevel: json["favoritesFilterLevel"] == null ? null : json["favoritesFilterLevel"],
@@ -207,6 +271,17 @@ class Notifications {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Notifications.newNotificationsPref() => new Notifications(
+    dinnerBell: false,
+    dinnerBellSms: new List<String>(),
+    dinnerBellTxt: "Dinner's Ready!",
+    dinnerStart: false,
+    lunchStart: false,
+    breakfastStart: false,
+    newRecommendations: false,
+    expiration: false,
+  );
+
   factory Notifications.fromJson(Map<String, dynamic> json) => new Notifications(
     dinnerStart: json["dinnerStart"] == null ? null : json["dinnerStart"],
     lunchStart: json["lunchStart"] == null ? null : json["lunchStart"],
@@ -243,6 +318,11 @@ class Nutrition {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Nutrition.newNutritionPref() => new Nutrition(
+    preset: null,
+    nutrients: NewNutrition()._nut,
+  );
+
   factory Nutrition.fromJson(Map<String, dynamic> json) => new Nutrition(
     preset: json["preset"] == null ? null : json["preset"],
     nutrients: json["nutrients"] == null ? null : new List<Nutrient>.from(json["nutrients"].map((x) => Nutrient.fromJson(x))),
@@ -252,6 +332,47 @@ class Nutrition {
     "preset": preset == null ? null : preset,
     "nutrients": nutrients == null ? null : new List<dynamic>.from(nutrients.map((x) => x.toJson())),
   };
+}
+
+class NewNutrition{
+  List<Nutrient> _nut = new List<Nutrient>();
+
+  NewNutrition() {
+    _nut.add(new Nutrient.newNutrient("Calories", "cal"));
+    _nut.add(new Nutrient.newNutrient("Fat", "g"));
+    _nut.add(new Nutrient.newNutrient("Protein", "g"));
+    _nut.add(new Nutrient.newNutrient("Carbs", "g"));
+    _nut.add(new Nutrient.newNutrient("Alcohol", "g"));
+    _nut.add(new Nutrient.newNutrient("Caffeine", "g"));
+    _nut.add(new Nutrient.newNutrient("Copper", "mg"));
+    _nut.add(new Nutrient.newNutrient("Choline", "mg"));
+    _nut.add(new Nutrient.newNutrient("Cholestorol", "mg"));
+    _nut.add(new Nutrient.newNutrient("Fluoride", "g"));
+    _nut.add(new Nutrient.newNutrient("Saturated Fat", "g"));
+    _nut.add(new Nutrient.newNutrient("Vitamin A", "IU"));
+    _nut.add(new Nutrient.newNutrient("Vitamin C", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin D", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin E", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin K", "µg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin B1", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin B2", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin B3", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin B5", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin B6", "mg"));
+    _nut.add(new Nutrient.newNutrient("Vitamin B12", "mg"));
+    _nut.add(new Nutrient.newNutrient("Fiber", "g"));
+    _nut.add(new Nutrient.newNutrient("Folate", "µg"));
+    _nut.add(new Nutrient.newNutrient("Folic Acid", "g"));
+    _nut.add(new Nutrient.newNutrient("Iodine", "µg"));
+    _nut.add(new Nutrient.newNutrient("Iron", "mg"));
+    _nut.add(new Nutrient.newNutrient("Magnesium", "mg"));
+    _nut.add(new Nutrient.newNutrient("Manganese", "mg"));
+    _nut.add(new Nutrient.newNutrient("Phosphorous", "mg"));
+    _nut.add(new Nutrient.newNutrient("Selenium", "µg"));
+    _nut.add(new Nutrient.newNutrient("Sodium", "mg"));
+    _nut.add(new Nutrient.newNutrient("Sugar", "g"));
+    _nut.add(new Nutrient.newNutrient("Zinc", "mg"));
+  }
 }
 
 class Schedule {
@@ -275,6 +396,15 @@ class Schedule {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Schedule.newSchedulePreferences() => new Schedule(
+    mealsToGenerate: new List<String>(),
+    sideDishes: false,
+    servings: 4,
+    populateCalendar: false,
+    mealTimes: new MealTimes.newMealTimes(),
+    daysOut: 0,
+  );
+
   factory Schedule.fromJson(Map<String, dynamic> json) => new Schedule(
     mealsToGenerate: json["mealsToGenerate"] == null ? null : new List<String>.from(json["mealsToGenerate"].map((x) => x)),
     sideDishes: json["sideDishes"] == null ? null : json["sideDishes"],
@@ -295,9 +425,9 @@ class Schedule {
 }
 
 class MealTimes {
-  String breakfast;
-  String lunch;
-  String dinner;
+  TimeOfDay breakfast;
+  TimeOfDay lunch;
+  TimeOfDay dinner;
 
   MealTimes({
     this.breakfast,
@@ -309,15 +439,21 @@ class MealTimes {
 
   String toRawJson() => json.encode(toJson());
 
+  factory MealTimes.newMealTimes() => new MealTimes(
+    breakfast: new TimeOfDay(hour: 0, minute: 0),
+    lunch: new TimeOfDay(hour: 0, minute: 0),
+    dinner: new TimeOfDay(hour: 0, minute: 0),
+  );
+
   factory MealTimes.fromJson(Map<String, dynamic> json) => new MealTimes(
-    breakfast: json["breakfast"] == null ? null : json["breakfast"],
-    lunch: json["lunch"] == null ? null : json["lunch"],
-    dinner: json["dinner"] == null ? null : json["dinner"],
+    breakfast: json["breakfast"] == null ? null : new TimeOfDay(hour: int.parse(json["breakfast"].split(":")[0]), minute: int.parse(json["breakfast"].split(":")[1])),
+    lunch: json["lunch"] == null ? null : new TimeOfDay(hour: int.parse(json["lunch"].split(":")[0]), minute: int.parse(json["lunch"].split(":")[1])),
+    dinner: json["dinner"] == null ? null : new TimeOfDay(hour: int.parse(json["dinner"].split(":")[0]), minute: int.parse(json["dinner"].split(":")[1])),
   );
 
   Map<String, dynamic> toJson() => {
-    "breakfast": breakfast == null ? null : breakfast,
-    "lunch": lunch == null ? null : lunch,
-    "dinner": dinner == null ? null : dinner,
+    "breakfast": breakfast == null ? null : breakfast.toString(),
+    "lunch": lunch == null ? null : lunch.toString(),
+    "dinner": dinner == null ? null : dinner.toString(),
   };
 }

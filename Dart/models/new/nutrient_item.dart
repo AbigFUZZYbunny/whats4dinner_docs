@@ -22,6 +22,13 @@ class Nutrient {
 
   String toRawJson() => json.encode(toJson());
 
+  factory Nutrient.newNutrient(String t, String u) => new Nutrient(
+    title: t,
+    unit: u,
+    amount: 0.0,
+    preferences: NewNutrientPreferences().ret,
+  );
+
   factory Nutrient.fromJson(Map<String, dynamic> json) => new Nutrient(
     title: json["title"] == null ? null : json["title"],
     unit: json["unit"] == null ? null : json["unit"],
@@ -35,6 +42,28 @@ class Nutrient {
     "amount": amount == null ? null : amount,
     "preferences": preferences == null ? null : new Map.from(preferences).map((k, v) => new MapEntry<String, dynamic>(k, v.toJson())),
   };
+}
+
+class NewNutrientPreferences{
+  Map<String, NutrientPreference> ret = new Map<String, NutrientPreference>();
+
+  NewNutrientPreferences() {
+    List<String> _cat = new List<String>();
+    _cat.add("mealMin");
+    _cat.add("mealMax");
+    _cat.add("breakfastMin");
+    _cat.add("breakfastMax");
+    _cat.add("lunchMin");
+    _cat.add("lunchMax");
+    _cat.add("dinnerMin");
+    _cat.add("dinnerMax");
+    _cat.add("dailyMin");
+    _cat.add("dailyMax");
+
+    for (String c in _cat) {
+      ret.putIfAbsent(c, () => new NutrientPreference.newPref());
+    }
+  }
 }
 
 class NutrientPreference {
@@ -51,6 +80,12 @@ class NutrientPreference {
   factory NutrientPreference.fromRawJson(String str) => NutrientPreference.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
+
+  factory NutrientPreference.newPref() => new NutrientPreference(
+    filterLevel: 0,
+    isPercentage: false,
+    amount: 0,
+  );
 
   factory NutrientPreference.fromJson(Map<String, dynamic> json) => new NutrientPreference(
     amount: json["amount"] == null ? null : Convert.dynamicToDouble(json["amount"]),

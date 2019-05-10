@@ -32,6 +32,15 @@ class User {
 
   String toRawJson() => json.encode(toJson());
 
+  factory User.newUser() => new User(
+    subscription: new List<SubscriptionRecord>(),
+    limits: Limits.newLimits(),
+    preferences: Preferences.newPreferences(),
+    groceries: Groceries.newGroceries(),
+    schedule: new List<Meal>(),
+    favorites: UserFavorites.newUserFavorites(),
+  );
+
   factory User.fromJson(Map<String, dynamic> json) => new User(
     subscription: json["subscription"] == null ? null : new List<SubscriptionRecord>.from(json["subscription"].map((x) => SubscriptionRecord.fromJson(x))),
     limits: json["limits"] == null ? null : Limits.fromJson(json["limits"]),
@@ -64,6 +73,11 @@ class UserFavorites {
 
   String toRawJson() => json.encode(toJson());
 
+  factory UserFavorites.newUserFavorites() => new UserFavorites(
+    recipes: new List<Recipe>(),
+    restaurants: new List<Restaurant>(),
+  );
+
   factory UserFavorites.fromJson(Map<String, dynamic> json) => new UserFavorites(
     recipes: json["recipes"] == null ? null : new List<Recipe>.from(json["recipes"].map((x) => Recipe.fromJson(x))),
     restaurants: json["restaraunts"] == null ? null : new List<Restaurant>.from(json["restaraunts"].map((x) => Restaurant.fromJson(x))),
@@ -89,6 +103,12 @@ class Groceries {
   factory Groceries.fromRawJson(String str) => Groceries.fromJson(json.decode(str));
 
   String toRawJson() => json.encode(toJson());
+
+  factory Groceries.newGroceries() => new Groceries(
+    required: new List<IngredientItem>(),
+    stock: new List<IngredientItem>(),
+    shopping: new List<IngredientItem>(),
+  );
 
   factory Groceries.fromJson(Map<String, dynamic> json) => new Groceries(
     required: json["required"] == null ? null : new List<IngredientItem>.from(json["required"].map((x) => IngredientItem.fromJson(x))),
