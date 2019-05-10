@@ -1,5 +1,4 @@
 class Convert{
-
   static double dynamicToDouble(dynamic _in){
     if(_in is int)
       return _in.toDouble();
@@ -22,4 +21,5 @@ class Convert{
   }
   static int fourDecimalToInt(double _in){
     return (_in * 10000).toInt();
-  }}
+  }
+}
