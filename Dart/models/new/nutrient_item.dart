@@ -9,6 +9,7 @@ class Nutrient {
   String title;
   String unit;
   double amount;
+  double percentOfDailyNeeds;
   Map<String, NutrientPreference> preferences;
 
   Nutrient({
@@ -16,6 +17,7 @@ class Nutrient {
     this.unit,
     this.preferences,
     this.amount,
+    this.percentOfDailyNeeds,
   });
 
   factory Nutrient.fromRawJson(String str) => Nutrient.fromJson(json.decode(str));
@@ -25,7 +27,8 @@ class Nutrient {
   factory Nutrient.newNutrient(String t, String u) => new Nutrient(
     title: t,
     unit: u,
-    amount: 0.0,
+    amount: null,
+    percentOfDailyNeeds: null,
     preferences: NewNutrientPreferences().ret,
   );
 
@@ -33,6 +36,7 @@ class Nutrient {
     title: json["title"] == null ? null : json["title"],
     unit: json["unit"] == null ? null : json["unit"],
     amount: json["amount"] == null ? null : Convert.dynamicToDouble(json["amount"]),
+    percentOfDailyNeeds: json["percentOfDailyNeeds"] == null ? null : Convert.dynamicToDouble(json["percentOfDailyNeeds"]),
     preferences: json["preferences"] == null ? null : new Map.from(json["preferences"]).map((k, v) => new MapEntry<String, NutrientPreference>(k, NutrientPreference.fromJson(v))),
   );
 
@@ -40,6 +44,7 @@ class Nutrient {
     "title": title == null ? null : title,
     "unit": unit == null ? null : unit,
     "amount": amount == null ? null : amount,
+    "percentOfDailyNeeds": percentOfDailyNeeds == null ? null : percentOfDailyNeeds,
     "preferences": preferences == null ? null : new Map.from(preferences).map((k, v) => new MapEntry<String, dynamic>(k, v.toJson())),
   };
 }
