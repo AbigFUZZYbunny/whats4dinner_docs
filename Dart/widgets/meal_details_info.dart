@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:w4d_test/colors.dart';
+import 'package:whats4dinner/models/meal.dart';
 
 class MealDetailsInfo extends StatelessWidget {
+  Meal meal;
+
+  MealDetailsInfo(this.meal);
+
   @override
   Widget build(BuildContext context) {
     return ListView(
