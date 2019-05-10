@@ -1,0 +1,135 @@
+{
+    "response": {
+        "api": {
+            "status": 200,
+            "api_version": "2.1",
+            "format": "json",
+            "api_key": "[your_key]"
+        },
+        "result": {
+            "restaurant_info": {
+                "restaurant_name": "",
+                "brief_description": "",
+                "full_description": "",
+                "location_id": "",
+                "mobile": "",
+                "address_1": "",
+                "address_2": "",
+                "city_town": "",
+                "state_province": "",
+                "postal_code": "",
+                "country": "",
+                "phone": "",
+                "fax": "",
+                "longitude": "",
+                "latitude": "",
+                "business_type": "",
+                "utc_offset": "",
+                "website_url": ""
+            },
+            "environment_info": {
+                "cuisine_type_primary": "",
+                "cuisine_type_secondary": "",
+                "smoking_allowed": "",
+                "takeout_available": "",
+                "seating_qty": null,
+                "max_group_size": "",
+                "pets_allowed": "",
+                "wheelchair_accessible": null,
+                "age_level_preference": "",
+                "dress_code": "casual",
+                "delivery_available": "",
+                "delivery_radius": null,
+                "delivery_fee": null,
+                "catering_available": "",
+                "reservations": "",
+                "alcohol_type": "",
+                "music_type": ""
+            },
+            "operating_days": [
+                {
+                    "day_of_week": "",
+                    "open_time": "",
+                    "close_time": "",
+                    "open_time_ampm": "",
+                    "close_time_ampm": "",
+                    "day": "",
+                    "day_short": ""
+                }
+            ],
+            "operating_days_printable": {
+                "1": {
+                    "day_name": "",
+                    "display": ""
+                }
+            },
+            "logo_urls": [
+                {
+                    "logo_url": ""
+                }
+            ],
+            "seating_locations": [
+                {
+                    "seating_location": ""
+                }
+            ],
+            "accepted_currencies": [
+                {
+                    "accepted_currency": ""
+                }
+            ],
+            "parking": {
+                "street_free": "",
+                "street_metered": "",
+                "private_lot": "",
+                "garage": "",
+                "valet": ""
+            },
+            "settings": {
+                "social": {
+                }
+            },
+            "menus": [
+                {
+                    "menu_name": "",
+                    "menu_description": "",
+                    "menu_note": "",
+                    "currency_symbol": "",
+                    "language": "",
+                    "menu_duration_name": "",
+                    "menu_duration_time_start": "",
+                    "menu_duration_time_end": "",
+                    "menu_groups": [
+                        {
+                            "group_name": "Drinks",
+                            "group_note": "",
+                            "group_description": "",
+                            "menu_group_options": [ ],
+                            "menu_items": [
+                                {
+                                    "menu_item_name": "",
+                                    "menu_item_description": "",
+                                    "menu_item_price": "",
+                                    "menu_item_calories": null,
+                                    "menu_item_heat_index": null,
+                                    "menu_item_allergy_information": "",
+                                    "menu_item_allergy_information_allergens": "",
+                                    "special": "",
+                                    "vegetarian": "",
+                                    "vegan": "",
+                                    "kosher": "",
+                                    "halal": "",
+                                    "gluten_free": "",
+                                    "menu_item_options": [ ],
+                                    "menu_item_sizes": [ ],
+                                    "menu_item_images": [ ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "id": ""
+        }
+    }
+}

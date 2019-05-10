@@ -2503,40 +2503,6 @@
 									"percentOfDailyNeeds": 2.18
 								}
 							],
-							"ingredients": [{
-									"name": "chocolate protein powder",
-									"amount": 2,
-									"unit": "tablespoons"
-								}, {
-									"name": "cocoa powder",
-									"amount": 0.5,
-									"unit": "tablespoon"
-								}, {
-									"name": "egg whites",
-									"amount": 2,
-									"unit": ""
-								}, {
-									"name": "whole grain bread",
-									"amount": 3,
-									"unit": "slices"
-								}, {
-									"name": "ground flaxseed",
-									"amount": 1,
-									"unit": "tablespoon"
-								}, {
-									"name": "jam",
-									"amount": 1,
-									"unit": "tablespoon"
-								}, {
-									"name": "peanut butter",
-									"amount": 1,
-									"unit": "tablespoon"
-								}, {
-									"name": "water",
-									"amount": 1,
-									"unit": "tablespoon"
-								}
-							],
 							"caloricBreakdown": {
 								"percentProtein": 33.1,
 								"percentFat": 33.42,
@@ -2549,12 +2515,6 @@
 						},
 						"cuisines": [
 							"american"
-						],
-						"dishTypes": [
-							"lunch",
-							"main course",
-							"main dish",
-							"dinner"
 						],
 						"diets": [
 							"gluten free",
@@ -3048,40 +3008,6 @@
 									"percentOfDailyNeeds": 2.18
 								}
 							],
-							"ingredients": [{
-									"name": "chocolate protein powder",
-									"amount": 2,
-									"unit": "tablespoons"
-								}, {
-									"name": "cocoa powder",
-									"amount": 0.5,
-									"unit": "tablespoon"
-								}, {
-									"name": "egg whites",
-									"amount": 2,
-									"unit": ""
-								}, {
-									"name": "whole grain bread",
-									"amount": 3,
-									"unit": "slices"
-								}, {
-									"name": "ground flaxseed",
-									"amount": 1,
-									"unit": "tablespoon"
-								}, {
-									"name": "jam",
-									"amount": 1,
-									"unit": "tablespoon"
-								}, {
-									"name": "peanut butter",
-									"amount": 1,
-									"unit": "tablespoon"
-								}, {
-									"name": "water",
-									"amount": 1,
-									"unit": "tablespoon"
-								}
-							],
 							"caloricBreakdown": {
 								"percentProtein": 33.1,
 								"percentFat": 33.42,
@@ -3094,12 +3020,6 @@
 						},
 						"cuisines": [
 							"american"
-						],
-						"dishTypes": [
-							"lunch",
-							"main course",
-							"main dish",
-							"dinner"
 						],
 						"diets": [
 							"gluten free",

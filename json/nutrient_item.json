@@ -1,18 +1,57 @@
 {
-	"title": "Calories",
-	"amount": 325.26,
-	"unit": "cal",
-	"percentOfDailyNeeds": 16.26
-	"preferences": [
-		"mealMin": 0,
-		"mealMax": 0,
-		"breakfastMin": 0,
-		"breakfastMax": 0,
-		"lunchMin": 0,
-		"lunchMax": 0,
-		"dinnerMin": 0,
-		"dinnerMax": 0,
-		"dailyMin": 0,
-		"dailyMax": 0
-	]
+	"title": "Fat",
+	"amount": 349.97,
+	"unit": "g",
+	"preferences": {
+		"mealMin": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"mealMax": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"breakfastMin": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"breakfastMax": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"lunchMin": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"lunchMax": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"dinnerMin": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"dinnerMax": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"dailyMin": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		},
+		"dailyMax": {
+			"amount": 0,
+			"filterLevel": 0,
+			"isPercentage": false
+		}
+	}
 }
