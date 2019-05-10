@@ -7,7 +7,7 @@
 import 'package:w4d_test/recipe_card.dart';
 import 'package:flutter/material.dart';
 import 'package:w4d_test/theme.dart';
-import 'package:w4d_test/dynamic_appbar.dart';
+import 'package:w4d_test/widgets/meal_details_info.dart';
 
 void main() => runApp(MyApp());
 
@@ -34,17 +34,7 @@ class MyStatefulWidget extends StatefulWidget {
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
-        body:
-        Stack(
-          children: [
-            DynamicAppBar(height: 150),
-            Column(
-              children: [
-                RecipeCard(false,btnPressed,10,10),
-              ],
-            ),
-          ]
-        ),
+        body: new MealDetailsInfo(),
     );
   }
 
