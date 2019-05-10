@@ -395,7 +395,7 @@
 				}
 			}, {
 				"title": "Copper",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -450,7 +450,7 @@
 				}
 			}, {
 				"title": "Calcium",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -505,7 +505,7 @@
 				}
 			}, {
 				"title": "Choline",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -560,7 +560,7 @@
 				}
 			}, {
 				"title": "Cholestorol",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -725,7 +725,7 @@
 				}
 			}, {
 				"title": "Vitamin A",
-				"unit": "g",
+				"unit": "IU",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -780,7 +780,7 @@
 				}
 			}, {
 				"title": "Vitamin C",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -890,7 +890,7 @@
 				}
 			}, {
 				"title": "Vitamin E",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -945,7 +945,7 @@
 				}
 			}, {
 				"title": "Vitamin K",
-				"unit": "g",
+				"unit": "µg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1000,7 +1000,7 @@
 				}
 			}, {
 				"title": "Vitamin B1",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1055,7 +1055,7 @@
 				}
 			}, {
 				"title": "Vitamin B2",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1110,7 +1110,7 @@
 				}
 			}, {
 				"title": "Vitamin B3",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1165,7 +1165,7 @@
 				}
 			}, {
 				"title": "Vitamin B5",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1220,7 +1220,7 @@
 				}
 			}, {
 				"title": "Vitamin B6",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1275,7 +1275,7 @@
 				}
 			}, {
 				"title": "Vitamin B12",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1385,7 +1385,7 @@
 				}
 			}, {
 				"title": "Folate",
-				"unit": "g",
+				"unit": "µg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1495,7 +1495,7 @@
 				}
 			}, {
 				"title": "Iodine",
-				"unit": "g",
+				"unit": "µg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1550,7 +1550,7 @@
 				}
 			}, {
 				"title": "Iron",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1605,7 +1605,7 @@
 				}
 			}, {
 				"title": "Magnesium",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1660,7 +1660,7 @@
 				}
 			}, {
 				"title": "Manganese",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1715,7 +1715,7 @@
 				}
 			}, {
 				"title": "Phosphorous",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1770,7 +1770,7 @@
 				}
 			}, {
 				"title": "Potassium",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1825,7 +1825,7 @@
 				}
 			}, {
 				"title": "Selenium",
-				"unit": "g",
+				"unit": "µg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1880,7 +1880,7 @@
 				}
 			}, {
 				"title": "Sodium",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
@@ -1990,7 +1990,7 @@
 				}
 			}, {
 				"title": "Zinc",
-				"unit": "g",
+				"unit": "mg",
 				"preferences": {
 					"mealMin": {
 						"amount": 0,
