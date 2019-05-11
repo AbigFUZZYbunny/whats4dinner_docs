@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:w4d_test/colors.dart';
-import 'package:whats4dinner/models/meal.dart';
 
 class MealDetailsInfo extends StatelessWidget {
-  Meal meal;
 
-  MealDetailsInfo(this.meal);
+  MealDetailsInfo();
 
   @override
   Widget build(BuildContext context) {
@@ -52,18 +50,18 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.list,
                         size: 40,
-                        color: DarkGray,
+                        color: Colors.red,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "4 / 10",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Ingredients",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
@@ -85,18 +83,18 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.format_align_justify,
                         size: 40,
                         color: DarkGray,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "4",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Steps",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
@@ -114,18 +112,18 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.fastfood,
                         size: 40,
                         color: DarkGray,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "American",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Cuisine",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
@@ -147,18 +145,18 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.attach_money,
                         size: 40,
                         color: DarkGray,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "1.49",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Per Serving",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
@@ -176,18 +174,18 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.assessment,
                         size: 40,
-                        color: DarkGray,
+                        color: PrimaryColor,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "295",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Calories",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
@@ -209,18 +207,18 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.supervisor_account,
                         size: 40,
-                        color: DarkGray,
+                        color: Colors.green,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "3",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Diets",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
@@ -238,21 +236,37 @@ class MealDetailsInfo extends StatelessWidget {
                   Column(
                     children: [
                       Icon(
-                        Icons.timer,
+                        Icons.warning,
                         size: 40,
-                        color: DarkGray,
+                        color: Colors.green,
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "15",
+                        "No",
                         style: TextStyle(fontSize: 20.0),
                       ),
                       SizedBox(height: 10),
                       Text(
-                        "Minutes",
+                        "Allergies",
                         style: TextStyle(fontSize: 20.0),
                       ),
                     ],
+                  ),
+                ),
+              ),
+            ),
+          ],
+        ),
+        Row(
+          children: <Widget>[
+            Expanded(
+              child: Card(
+                margin: const EdgeInsets.fromLTRB(10, 5, 5, 5),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    "Credit: Nutritionist in the Kitchen",
+                    style: TextStyle(fontSize: 20.0),
                   ),
                 ),
               ),
