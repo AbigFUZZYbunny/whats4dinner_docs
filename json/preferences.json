@@ -16,6 +16,9 @@
 			"Dinner"
 		],
 		"sideDishes": true,
+		"sideDishDifficulty": 0,
+		"dessert": true,
+		"dessertDifficulty": 0,
 		"servings": 2,
 		"populateCalendar": true,
 		"mealTimes": {
@@ -52,1997 +55,1124 @@
 	},
 	"diets": {
 		"filterLevel": 0,
-		"glutenFree": false,
-		"keto": false,
-		"paleo": false,
-		"pescatarian": false,
-		"primal": false,
-		"vegan": false,
-		"vegetarian": false,
-		"whole30": false
+		"diets":{
+			"glutenFree": false,
+			"keto": false,
+			"paleo": false,
+			"pescatarian": false,
+			"primal": false,
+			"vegan": false,
+			"vegetarian": false,
+			"whole30": false
+		}
 	},
 	"nutrition": {
 		"preset": "RDA",
-		"nutrients": [{
-				"title": "Calories",
-				"unit": "cal",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Fat",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Protein",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Carbs",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Alcohol",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Caffeine",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Copper",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Calcium",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Choline",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Cholestorol",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Fluoride",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Saturated Fat",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin A",
-				"unit": "IU",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin C",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin D",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin E",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin K",
-				"unit": "µg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin B1",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin B2",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin B3",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin B5",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin B6",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Vitamin B12",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Fiber",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Folate",
-				"unit": "µg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Folic Acid",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Iodine",
-				"unit": "µg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Iron",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Magnesium",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Manganese",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Phosphorous",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Potassium",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Selenium",
-				"unit": "µg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Sodium",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Sugar",
-				"unit": "g",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
-			}, {
-				"title": "Zinc",
-				"unit": "mg",
-				"preferences": {
-					"mealMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"mealMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"breakfastMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"lunchMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dinnerMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMin": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					},
-					"dailyMax": {
-						"amount": 0,
-						"filterLevel": 0,
-						"isPercentage": false
-					}
-				}
+		"nutrients": {
+			"breakfast": {
+				"filterLevel": 0,
+				"nutrients": [{
+						"title": "Calories",
+						"name": "Calories",
+						"min": 0,
+						"max": 0,
+						"unit": "cal",
+					}, {
+						"title": "Fat",
+						"name": "Fat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Protein",
+						"name": "Protein",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Carbs",
+						"name": "Carbs",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Alcohol",
+						"name": "Alcohol",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Caffeine",
+						"name": "Caffeine",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Copper",
+						"name": "Copper",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Calcium",
+						"name": "Calcium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Choline",
+						"name": "Choline",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Cholesterol",
+						"name": "Cholesterol",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Fluoride",
+						"name": "Fluoride",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Saturated Fat",
+						"name": "SaturatedFat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Vitamin A",
+						"name": "VitaminA",
+						"min": 0,
+						"max": 0,
+						"unit": "IU",
+					}, {
+						"title": "Vitamin C",
+						"name": "VitaminC",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin D",
+						"name": "VitaminD",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin E",
+						"name": "VitaminE",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin K",
+						"name": "VitaminK",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin B1",
+						"name": "VitaminB1",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B2",
+						"name": "VitaminB2",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B3",
+						"name": "VitaminB3",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B5",
+						"name": "VitaminB5",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B6",
+						"name": "VitaminB6",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B12",
+						"name": "VitaminB12",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Fiber",
+						"name": "Fiber",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Folate",
+						"name": "Folate",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Folic Acid",
+						"name": "FolicAcid",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iodine",
+						"name": "Iodine",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iron",
+						"name": "Iron",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Magnesium",
+						"name": "Magnesium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Manganese",
+						"name": "Manganese",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Phosphorus",
+						"name": "Phosphorus",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Potassium",
+						"name": "Potassium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Selenium",
+						"name": "Selenium",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Sodium",
+						"name": "Sodium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Sugar",
+						"name": "Sugar",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Zinc",
+						"name": "Zinc",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					},
+				]
+			},
+			"lunch": {
+				"filterLevel": 0,
+				"nutrients": [{
+						"title": "Calories",
+						"name": "Calories",
+						"min": 0,
+						"max": 0,
+						"unit": "cal",
+					}, {
+						"title": "Fat",
+						"name": "Fat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Protein",
+						"name": "Protein",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Carbs",
+						"name": "Carbs",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Alcohol",
+						"name": "Alcohol",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Caffeine",
+						"name": "Caffeine",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Copper",
+						"name": "Copper",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Calcium",
+						"name": "Calcium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Choline",
+						"name": "Choline",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Cholesterol",
+						"name": "Cholesterol",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Fluoride",
+						"name": "Fluoride",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Saturated Fat",
+						"name": "SaturatedFat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Vitamin A",
+						"name": "VitaminA",
+						"min": 0,
+						"max": 0,
+						"unit": "IU",
+					}, {
+						"title": "Vitamin C",
+						"name": "VitaminC",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin D",
+						"name": "VitaminD",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin E",
+						"name": "VitaminE",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin K",
+						"name": "VitaminK",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin B1",
+						"name": "VitaminB1",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B2",
+						"name": "VitaminB2",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B3",
+						"name": "VitaminB3",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B5",
+						"name": "VitaminB5",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B6",
+						"name": "VitaminB6",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B12",
+						"name": "VitaminB12",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Fiber",
+						"name": "Fiber",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Folate",
+						"name": "Folate",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Folic Acid",
+						"name": "FolicAcid",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iodine",
+						"name": "Iodine",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iron",
+						"name": "Iron",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Magnesium",
+						"name": "Magnesium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Manganese",
+						"name": "Manganese",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Phosphorus",
+						"name": "Phosphorus",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Potassium",
+						"name": "Potassium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Selenium",
+						"name": "Selenium",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Sodium",
+						"name": "Sodium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Sugar",
+						"name": "Sugar",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Zinc",
+						"name": "Zinc",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					},
+				]
+			},
+			"dinner": {
+				"filterLevel": 0,
+				"nutrients": [{
+						"title": "Calories",
+						"name": "Calories",
+						"min": 0,
+						"max": 0,
+						"unit": "cal",
+					}, {
+						"title": "Fat",
+						"name": "Fat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Protein",
+						"name": "Protein",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Carbs",
+						"name": "Carbs",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Alcohol",
+						"name": "Alcohol",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Caffeine",
+						"name": "Caffeine",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Copper",
+						"name": "Copper",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Calcium",
+						"name": "Calcium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Choline",
+						"name": "Choline",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Cholesterol",
+						"name": "Cholesterol",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Fluoride",
+						"name": "Fluoride",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Saturated Fat",
+						"name": "SaturatedFat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Vitamin A",
+						"name": "VitaminA",
+						"min": 0,
+						"max": 0,
+						"unit": "IU",
+					}, {
+						"title": "Vitamin C",
+						"name": "VitaminC",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin D",
+						"name": "VitaminD",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin E",
+						"name": "VitaminE",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin K",
+						"name": "VitaminK",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin B1",
+						"name": "VitaminB1",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B2",
+						"name": "VitaminB2",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B3",
+						"name": "VitaminB3",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B5",
+						"name": "VitaminB5",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B6",
+						"name": "VitaminB6",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B12",
+						"name": "VitaminB12",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Fiber",
+						"name": "Fiber",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Folate",
+						"name": "Folate",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Folic Acid",
+						"name": "FolicAcid",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iodine",
+						"name": "Iodine",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iron",
+						"name": "Iron",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Magnesium",
+						"name": "Magnesium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Manganese",
+						"name": "Manganese",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Phosphorus",
+						"name": "Phosphorus",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Potassium",
+						"name": "Potassium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Selenium",
+						"name": "Selenium",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Sodium",
+						"name": "Sodium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Sugar",
+						"name": "Sugar",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Zinc",
+						"name": "Zinc",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					},
+				]
+			},
+			"meal": {
+				"filterLevel": 0,
+				"nutrients": [{
+						"title": "Calories",
+						"name": "Calories",
+						"min": 0,
+						"max": 0,
+						"unit": "cal",
+					}, {
+						"title": "Fat",
+						"name": "Fat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Protein",
+						"name": "Protein",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Carbs",
+						"name": "Carbs",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Alcohol",
+						"name": "Alcohol",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Caffeine",
+						"name": "Caffeine",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Copper",
+						"name": "Copper",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Calcium",
+						"name": "Calcium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Choline",
+						"name": "Choline",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Cholesterol",
+						"name": "Cholesterol",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Fluoride",
+						"name": "Fluoride",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Saturated Fat",
+						"name": "SaturatedFat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Vitamin A",
+						"name": "VitaminA",
+						"min": 0,
+						"max": 0,
+						"unit": "IU",
+					}, {
+						"title": "Vitamin C",
+						"name": "VitaminC",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin D",
+						"name": "VitaminD",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin E",
+						"name": "VitaminE",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin K",
+						"name": "VitaminK",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin B1",
+						"name": "VitaminB1",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B2",
+						"name": "VitaminB2",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B3",
+						"name": "VitaminB3",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B5",
+						"name": "VitaminB5",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B6",
+						"name": "VitaminB6",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B12",
+						"name": "VitaminB12",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Fiber",
+						"name": "Fiber",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Folate",
+						"name": "Folate",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Folic Acid",
+						"name": "FolicAcid",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iodine",
+						"name": "Iodine",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iron",
+						"name": "Iron",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Magnesium",
+						"name": "Magnesium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Manganese",
+						"name": "Manganese",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Phosphorus",
+						"name": "Phosphorus",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Potassium",
+						"name": "Potassium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Selenium",
+						"name": "Selenium",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Sodium",
+						"name": "Sodium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Sugar",
+						"name": "Sugar",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Zinc",
+						"name": "Zinc",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					},
+				]
+			},
+			"daily": {
+				"filterLevel": 0,
+				"nutrients": [{
+						"title": "Calories",
+						"name": "Calories",
+						"min": 0,
+						"max": 0,
+						"unit": "cal",
+					}, {
+						"title": "Fat",
+						"name": "Fat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Protein",
+						"name": "Protein",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Carbs",
+						"name": "Carbs",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Alcohol",
+						"name": "Alcohol",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Caffeine",
+						"name": "Caffeine",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Copper",
+						"name": "Copper",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Calcium",
+						"name": "Calcium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Choline",
+						"name": "Choline",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Cholesterol",
+						"name": "Cholesterol",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Fluoride",
+						"name": "Fluoride",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Saturated Fat",
+						"name": "SaturatedFat",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Vitamin A",
+						"name": "VitaminA",
+						"min": 0,
+						"max": 0,
+						"unit": "IU",
+					}, {
+						"title": "Vitamin C",
+						"name": "VitaminC",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin D",
+						"name": "VitaminD",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin E",
+						"name": "VitaminE",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin K",
+						"name": "VitaminK",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Vitamin B1",
+						"name": "VitaminB1",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B2",
+						"name": "VitaminB2",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B3",
+						"name": "VitaminB3",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B5",
+						"name": "VitaminB5",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B6",
+						"name": "VitaminB6",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Vitamin B12",
+						"name": "VitaminB12",
+						"min": 0,
+						"max": 0,
+						"unit": "µg",
+					}, {
+						"title": "Fiber",
+						"name": "Fiber",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Folate",
+						"name": "Folate",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Folic Acid",
+						"name": "FolicAcid",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iodine",
+						"name": "Iodine",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Iron",
+						"name": "Iron",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Magnesium",
+						"name": "Magnesium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Manganese",
+						"name": "Manganese",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Phosphorus",
+						"name": "Phosphorus",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Potassium",
+						"name": "Potassium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Selenium",
+						"name": "Selenium",
+						"min": 0,
+						"max": 0,
+						"unit": "g",
+					}, {
+						"title": "Sodium",
+						"name": "Sodium",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Sugar",
+						"name": "Sugar",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					}, {
+						"title": "Zinc",
+						"name": "Zinc",
+						"min": 0,
+						"max": 0,
+						"unit": "mg",
+					},
+				]
 			}
 		]
 	},
