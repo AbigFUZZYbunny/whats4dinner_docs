@@ -6,6 +6,10 @@
 	"originalName": "natural peanut butter (or almond/cashew/hazelnut/sunflower butter)",
 	"amount": 10,
 	"unit": "tablespoon",
+	"tips": [
+		"This is where you can put little tips about the ingredient.",
+		"For example, you can mention that potatoes are still good even if roots are sprouting, you just need to scoop out the roots"
+	],
 	"measures": {
 		"us": {
 			"amount": 1,

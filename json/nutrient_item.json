@@ -1,57 +1,8 @@
 {
-	"title": "Fat",
-	"amount": 349.97,
-	"unit": "g",
-	"preferences": {
-		"mealMin": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"mealMax": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"breakfastMin": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"breakfastMax": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"lunchMin": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"lunchMax": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"dinnerMin": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"dinnerMax": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"dailyMin": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		},
-		"dailyMax": {
-			"amount": 0,
-			"filterLevel": 0,
-			"isPercentage": false
-		}
-	}
+	"title": "Calories",
+	"min": 0,
+	"max": 0,
+	"amount": 325.26,
+	"unit": "cal",
+	"percentOfDailyNeeds": 16.26
 }
