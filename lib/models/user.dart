@@ -90,6 +90,12 @@ class Groceries {
     this.shopping,
   });
 
+  factory Groceries.newUser() => new Groceries(
+    required: new List<IngredientItem>(),
+    stock: new List<IngredientItem>(),
+    shopping: new List<IngredientItem>(),
+  );
+
   factory Groceries.fromJson(String str) => Groceries.fromMap(json.decode(str));
 
   String toJson() => json.encode(toMap());
@@ -107,34 +113,6 @@ class Groceries {
   };
 }
 
-class Ingredients {
-  int favoritesFilterLevel;
-  List<IngredientItem> favorites;
-  List<IngredientItem> ignored;
-
-  Ingredients({
-    this.favoritesFilterLevel,
-    this.favorites,
-    this.ignored,
-  });
-
-  factory Ingredients.fromJson(String str) => Ingredients.fromMap(json.decode(str));
-
-  String toJson() => json.encode(toMap());
-
-  factory Ingredients.fromMap(Map<String, dynamic> json) => new Ingredients(
-    favoritesFilterLevel: json["favoritesFilterLevel"] == null ? null : json["favoritesFilterLevel"],
-    favorites: json["favorites"] == null ? null : new List<IngredientItem>.from(json["favorites"].map((x) => x)),
-    ignored: json["ignored"] == null ? null : new List<IngredientItem>.from(json["ignored"].map((x) => x)),
-  );
-
-  Map<String, dynamic> toMap() => {
-    "favoritesFilterLevel": favoritesFilterLevel == null ? null : favoritesFilterLevel,
-    "favorites": favorites == null ? null : new List<dynamic>.from(favorites.map((x) => x)),
-    "ignored": ignored == null ? null : new List<dynamic>.from(ignored.map((x) => x)),
-  };
-}
-
 class Schedule {
   List<Recipe> meal;
   List<Recipe> side;
@@ -145,6 +123,12 @@ class Schedule {
     this.side,
     this.dessert,
   });
+
+  factory Schedule.newUser() => new Schedule(
+    meal: new List<Recipe>(),
+    side:  new List<Recipe>(),
+    dessert:  new List<Recipe>(),
+  );
 
   factory Schedule.fromJson(String str) => Schedule.fromMap(json.decode(str));
 

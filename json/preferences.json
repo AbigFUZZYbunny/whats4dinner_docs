@@ -27,9 +27,12 @@
 	},
 	"cuisines": {
 		"cuisineWeight": 50,
-		"cuisineTypes": [
+		"favorites": [
 			"American",
 			"Mexican"
+		],
+		"ignored": [
+			"Indian"
 		]
 	},
 	"allergies": {

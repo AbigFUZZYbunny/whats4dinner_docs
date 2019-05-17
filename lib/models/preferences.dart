@@ -67,15 +67,18 @@ class Preferences {
 
 class PrefCuisines {
   int cuisineWeight;
-  List<String> cuisineTypes;
+  List<String> favorites;
+  List<String> ignored;
 
   PrefCuisines({
     this.cuisineWeight,
-    this.cuisineTypes,
+    this.favorites,
+    this.ignored
   });
 
   factory PrefCuisines.newUser() => new PrefCuisines(
-    cuisineTypes: new List<String>(),
+    ignored: new List<String>(),
+    favorites: new List<String>(),
     cuisineWeight: 0,
   );
 
@@ -85,12 +88,14 @@ class PrefCuisines {
 
   factory PrefCuisines.fromMap(Map<String, dynamic> json) => new PrefCuisines(
     cuisineWeight: json["cuisineWeight"] == null ? null : json["cuisineWeight"],
-    cuisineTypes: json["cuisineTypes"] == null ? null : new List<String>.from(json["cuisineTypes"].map((x) => x)),
+    favorites: json["favorites"] == null ? null : new List<String>.from(json["favorites"].map((x) => x)),
+    ignored: json["ignored"] == null ? null : new List<String>.from(json["ignored"].map((x) => x)),
   );
 
   Map<String, dynamic> toMap() => {
     "cuisineWeight": cuisineWeight == null ? null : cuisineWeight,
-    "cuisineTypes": cuisineTypes == null ? null : new List<dynamic>.from(cuisineTypes.map((x) => x)),
+    "favorites": favorites == null ? null : new List<dynamic>.from(favorites.map((x) => x)),
+    "ignored": ignored == null ? null : new List<dynamic>.from(ignored.map((x) => x)),
   };
 }
 
@@ -323,16 +328,82 @@ class PrefSchedule {
 }
 
 List<Nutrient> newNutrients(){
-  List<Nutrient> _ret = new List<Nutrient>();
-
+  List<Nutrient> _ret = [];
+  nutrientsList().forEach((key, value) => (){
+    _ret.add(new Nutrient.newUser(key, value));
+  });
+  return _ret;
 }
 
 Map<String, bool> newDiets(){
   Map<String, bool> _ret = new Map<String, bool>();
-
+  for (var i in dietsList()){
+    _ret.putIfAbsent(i, () => false);
+  }
+  return _ret;
 }
 
 Map<String, bool> newAllergies(){
   Map<String, bool> _ret = new Map<String, bool>();
+  for (var i in allergyList()){
+    _ret.putIfAbsent(i, () => false);
+  }
+  return _ret;
+}
 
+List<String> dietsList(){
+  List<String> _ret = ["pescetarian", "lacto vegetarian", "ovo vegetarian", "vegan", "paleo", "primal", "vegetarian"];
+  return _ret;
+}
+
+List<String> allergyList(){
+  List<String> _ret = ["dairy", "egg", "gluten", "peanut", "sesame", "seafood", "shellfish", "soy", "sulfite", "tree nut", "wheat"];
+  return _ret;
+}
+
+List<String> cuisineList(){
+  List<String> _ret = [ "African", "American", "British", "Cajun", "Caribbean", "Chinese", "Eastern European", "French", "German", "Greek", "Indian", "Irish", "Italian", "Japanese", "Jewish", "Korean", "Latin American", "Mexican", "Middle Eastern", "Nordic", "Southern", "Spanish", "Thai", "Vietnamese"];
+  return _ret;
+}
+
+Map<String, String> nutrientsList(){
+  Map<String, String> _ret = {
+    "Calories": "cal",
+    "Fat": "g",
+    "Protein": "g",
+    "Carbs": "g",
+    "Alcohol": "g",
+    "Caffeine": "mg",
+    "Copper": "mg",
+    "Calcium": "mg",
+    "Choline": "mg",
+    "Cholesterol": "mg",
+    "Fluoride": "mg",
+    "Saturated Fat": "g",
+    "Vitamin A": "IU",
+    "Vitamin C": "mg",
+    "Vitamin D": "µg",
+    "Vitamin E": "mg",
+    "Vitamin K": "µg",
+    "Vitamin B1": "mg",
+    "Vitamin B2": "mg",
+    "Vitamin B3": "mg",
+    "Vitamin B5": "mg",
+    "Vitamin B6": "mg",
+    "Vitamin B12": "µg",
+    "Fiber": "mg",
+    "Folate": "g",
+    "Folic Acid": "g",
+    "Iodine": "g",
+    "Iron": "mg",
+    "Magnesium": "mg",
+    "Manganese": "mg",
+    "Phosphorus": "mg",
+    "Potassium": "mg",
+    "Selenium": "g",
+    "Sodium": "mg",
+    "Sugar": "mg",
+    "Zinc": "mg"
+  };
+  return _ret;
 }
